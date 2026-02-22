@@ -1,0 +1,33 @@
+{
+  "realm": "startup",
+  "users": [
+    {
+      "username": "john@doe.com",
+      "firstName": "John",
+      "lastName": "Doe",
+      "email": "john@doe.com",
+      "emailVerified": true,
+      "attributes": {
+        "locale": [
+          "en"
+        ]
+      },
+      "enabled": true,
+      "totp": false,
+      "credentials": [
+        {
+          "type": "password",
+          "value": "test"
+        }
+      ],
+      "disableableCredentialTypes": [],
+      "requiredActions": [],
+      "realmRoles": [
+      ],
+      "notBefore": 0,
+      "groups": [
+        "startup-user"
+      ]
+    }
+  ]
+}
