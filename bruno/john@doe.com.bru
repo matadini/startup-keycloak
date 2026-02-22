@@ -1,0 +1,35 @@
+meta {
+  name: john@doe.com
+  type: http
+  seq: 2
+}
+
+post {
+  url: http://localhost:7080/realms/startup/protocol/openid-connect/token
+  body: multipartForm
+  auth: none
+}
+
+headers {
+  Content-Type: application/x-www-form-urlencoded
+}
+
+body:json {
+  client_id=venda-internal&grant_type=password&client_secret=9LhygsAk5pXB3LPKoy5EjUmtmreKgqRy&scope=openid&username=mateusz.iwanek%40wavestone.eu&password=Ku+as1q3e5t%21%40%23
+  
+}
+
+body:text {
+  client_id=startup-api-client
+  grant_type=password
+  username=john%40doe.com
+  password=test
+  
+}
+
+body:multipart-form {
+  client_id: startup-client
+  grant_type: password
+  username: john@doe.com
+  password: test
+}
